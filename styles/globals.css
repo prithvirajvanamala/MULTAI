@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+.dark body {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+.dark .navbar {
+  background-color: #1f1f1f;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: inherit;
+}
+main {
+  padding: 2rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+.dark footer {
+  background-color: #1a1a1a;
+}
