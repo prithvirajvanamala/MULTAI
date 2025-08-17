@@ -46,7 +46,7 @@ export default function FloatingWhatsAppButton({
       }}
     >
       {/* WhatsApp glyph — inherits currentColor (white) */}
-      <img src="./icons/whatsapp.svg" alt="" aria-hidden className="h-6 w-6" />
+      <img src="/icons/whatsapp.svg" alt="" aria-hidden className="h-6 w-6" />
 
     </a>
   );
