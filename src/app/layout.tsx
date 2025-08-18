@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const showWhatsApp = envBool(process.env.NEXT_PUBLIC_SHOW_WHATSAPP, true);
-  const showChatbot  = envBool(process.env.NEXT_PUBLIC_SHOW_CHATBOT, true);
+  const showChatbot  = envBool(process.env.NEXT_PUBLIC_SHOW_CHATBOT, false);
   const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
 
   return (
@@ -91,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   />
 )}
 
-<!--{showChatbot && (
+{showChatbot && (
   <ChatbotWidget
     rightClassName="right-4"
     zIndexClass="z-50"
@@ -100,7 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     extraFabBottom={72}
     extraPanelBottom={160}
   />
-)}-->
+)}
       </body>
     </html>
   );
